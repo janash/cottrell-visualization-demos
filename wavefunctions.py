@@ -46,8 +46,7 @@ def wavefunction(n, m, l):
         return np.sqrt(2)/(81 * np.sqrt(np.pi))* (6 * r - r ** 2) * np.exp(-r/3) * np.sin(theta) * np.sin(phi)
 
     def wavefunction_320(r, theta, phi):
-        return np.sqrt(2)/(81/np.sqrt(np.pi))*(6*r - r**2) * \
-            np.exp(-r/3) * np.sin(theta) * np.cos(phi)
+        return 1/(81*np.sqrt(6 * np.pi)) * r**2 * np.exp(-r/3) * (3*np.cos(theta)**2 - 1)
         
     def wavefunction_321(r, theta, phi):
         pass
