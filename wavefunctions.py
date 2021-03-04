@@ -22,7 +22,7 @@ def wavefunction(n, m, l):
         return (1/np.sqrt(np.pi)) * np.exp(-r)
 
     def wavefunction_200(r, theta=None, phi=None):
-        return (1/4)*(1/(np.sqrt(2*np.pi)))*(2 - r)*np.exp(-r)
+        return (1/4)*(1/(np.sqrt(2*np.pi)))*(2 - r)*np.exp(-r/2)
     
     def wavefunction_210(r, theta, phi):
         return (1/(4*np.sqrt(2*np.pi)))*r*np.exp(-r/2)*np.cos(theta)
